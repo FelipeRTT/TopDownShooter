@@ -16,3 +16,12 @@ if(y + (sprite_height /2) > room_height){ //fazendo com que ao descer ele invert
 }else if(y - (sprite_height /2) <= 0){
 	vspeed *=-1;
 }
+
+
+//checando se esta perto do player e fazendo ele seguir se estiver
+distanciaPlayer = point_distance(x,y,obj_player.x,obj_player.y);
+
+if(distanciaPlayer < visao){//se a distancia entre o player for menor do que a visao o inimigo vai seguir ele
+	direction = point_direction(x,y, obj_player.x, obj_player.y);
+}
+
