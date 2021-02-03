@@ -25,3 +25,13 @@ if(distanciaPlayer < visao){//se a distancia entre o player for menor do que a v
 	direction = point_direction(x,y, obj_player.x, obj_player.y);
 }
 
+
+//morendo ao levar tiro
+var tiro = instance_place(x,y,obj_tiro);//checando com qual tiro colidiu
+if(tiro){
+	instance_destroy();//se destruindo
+	instance_destroy(tiro);//destruindo o tiro
+	
+}
+
+

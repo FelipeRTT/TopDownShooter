@@ -22,6 +22,11 @@ Iniciando Player 1 :
 		fazer ele se mover aleatoriamente OK
 		impedir que ele saia da rom e fazer com olhem para onde estao indo
 		fazendo o inimigo se estiver a certa distancia ir atras do player OK step 
+		fazendo criar particulas ao colidir com o tiro OK
+		fazendo criar sangue ao inimigo ser destruido OK
+		
+		
+		
 		
 ----camera- 
 			aumentanar view port OK
