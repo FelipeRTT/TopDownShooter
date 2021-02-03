@@ -1,0 +1,8 @@
+Iniciando Player 1 :
+
+		Criar a sprite do player 
+
+		Criar o objeto player
+
+		E usando apenas o step_event fazer com que o player se mova quando o jogador apertar as teclas WASD 
+
