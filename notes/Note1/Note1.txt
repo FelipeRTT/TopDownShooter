@@ -8,3 +8,6 @@ Iniciando Player 1 :
 		
 		fazendo o player mirar para onde o mouse esta STEP player OK
 
+		criar uma sprite para o tiro e seu objeto
+		
+		fazer o tiro ir para aonde o mouse esta apontado 

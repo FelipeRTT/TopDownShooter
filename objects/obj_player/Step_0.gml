@@ -20,3 +20,11 @@ y += velv ; // aplicando mov vertical
 
 var direcao = point_direction(x,y,mouse_x,mouse_y)+180;
 image_angle = direcao;
+
+var tiro = mouse_check_button_pressed(mb_left);
+if(tiro){
+	instance_create_layer(x,y,"instances",obj_tiro)
+}
+
+
+
