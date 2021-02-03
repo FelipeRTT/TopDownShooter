@@ -10,5 +10,13 @@ baixo = keyboard_check(ord("S"));
 velh = (dir - esq) * velocidade; //movimentação
 velv = (baixo - cima) * velocidade;
 
-x+= velh;
-y += velv;
+x+= velh ;//aplicando mov horizontal
+
+
+y += velv ; // aplicando mov vertical
+
+
+//fazendo o player mirar para onde o mouse esta 
+
+var direcao = point_direction(x,y,mouse_x,mouse_y)+180;
+image_angle = direcao;
