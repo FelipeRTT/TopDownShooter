@@ -10,4 +10,7 @@ Iniciando Player 1 :
 
 		criar uma sprite para o tiro e seu objeto
 		
-		fazer o tiro ir para aonde o mouse esta apontado 
+		fazer o tiro ir para aonde o mouse esta apontado OK, obj_tiro create
+		
+		fazer o tiro ser destruido ao sair da tela OK
+		
