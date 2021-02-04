@@ -39,7 +39,7 @@ if(tiro){
 image_xscale += 0.001;
 image_yscale += 0.001;
 
-if(image_xscale >= 1.5 || image_yscale >= 1.5){
+if(image_xscale >= 1.5 || image_yscale >= 1.5){//limitando o crescimento
 	image_xscale = 1.5;
 	image_yscale = 1.5;
 }
