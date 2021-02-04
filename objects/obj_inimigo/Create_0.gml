@@ -8,3 +8,6 @@ visao = 250;//definindo alcance de visao
 
 numeroParticulas = irandom_range(3,15);//definindo o numero de particulas criadas
 
+
+//criando contagem para os sangues
+global.numeroDeSangue = 0;//iniciando com o numero de sangue = 0 e quando for destruido vai adicionar mais um

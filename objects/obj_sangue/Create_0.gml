@@ -7,4 +7,3 @@ image_index = irandom_range(0,9);
 //fazendo o angulo da imagem ser aleatoria
 image_angle = irandom_range(0,360);
 
-

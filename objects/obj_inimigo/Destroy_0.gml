@@ -9,6 +9,7 @@ repeat(numeroParticulas){
 
 //fazendo o sangue ao ser destruido
 instance_create_layer(x,y,"chao",obj_sangue);
+global.numeroDeSangue ++;//quando o obj for destruido ele vai criar o sangue e vai contar sangue ++
 
 
 
