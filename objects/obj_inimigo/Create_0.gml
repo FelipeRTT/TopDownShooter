@@ -9,5 +9,8 @@ visao = 250;//definindo alcance de visao
 numeroParticulas = irandom_range(3,18);//definindo o numero de particulas criadas
 
 
-//criando contagem para os sangues
-global.numeroDeSangue = 0;//iniciando com o numero de sangue = 0 e quando for destruido vai adicionar mais um
+
+
+//fazendo ele iniciar pequeno para ir crescendo aos poucos ate sair do ovo
+image_xscale = 0.4;
+image_yscale = 0.4;

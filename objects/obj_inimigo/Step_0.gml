@@ -35,3 +35,11 @@ if(tiro){
 }
 
 
+//fazendo com que ao sair do ovo o inimigo va aumentando aos poucos
+image_xscale += 0.001;
+image_yscale += 0.001;
+
+if(image_xscale >= 1.5 || image_yscale >= 1.5){
+	image_xscale = 1.5;
+	image_yscale = 1.5;
+}

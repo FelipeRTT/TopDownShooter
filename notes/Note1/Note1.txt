@@ -24,6 +24,9 @@ Iniciando Player 1 :
 		fazendo o inimigo se estiver a certa distancia ir atras do player OK step 
 		fazendo criar particulas ao colidir com o tiro OK
 		fazendo criar sangue ao inimigo ser destruido OK
+		criar inimigo 2 OK 
+		fazer o inimigo 2 criar ovos OK
+		fazer os ovos criarem o inimigo 1  OK
 		
 		
 		
@@ -31,4 +34,5 @@ Iniciando Player 1 :
 ----camera- 
 			aumentanar view port OK
 			configurar camera OK
+			fazer a camera tremer ao matar inimigo OK 
 			
