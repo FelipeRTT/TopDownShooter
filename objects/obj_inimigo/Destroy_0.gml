@@ -9,3 +9,8 @@ repeat(numeroParticulas){
 
 //fazendo o sangue ao ser destruido
 instance_create_layer(x,y,"chao",obj_sangue);
+
+
+
+//criando tremura ---
+var treme = instance_create_layer(x,y,"inimigos",obj_tremer);
