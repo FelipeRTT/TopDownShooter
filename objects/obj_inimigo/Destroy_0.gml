@@ -15,3 +15,4 @@ global.numeroDeSangue ++;//quando o obj for destruido ele vai criar o sangue e v
 
 //criando tremura ---
 var treme = instance_create_layer(x,y,"inimigos",obj_tremer);
+treme.treme = 10;//alterando intensidade da tremida
