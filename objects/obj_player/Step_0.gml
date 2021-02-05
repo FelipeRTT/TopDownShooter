@@ -44,13 +44,29 @@ if(colidindo1){
 	vida--;
 }
 
-//checando colisao com inimigo 2, ainda nao pensei em nada para fazer ao colidir com o inimigo 2
-//var colidindo2 = instance_place(x,y,obj_inimigo_grande);
-//if(colidindo2){ //aqui nao da certo pois ele colidi uma vez perde vida e nao conta mais
-//	vida--;
-//}
+//checando colisao com inimigo 2, e fazendo o player ficando invisivel e voltando ao normal para dar a sensaç~~ao de que teve algum dano
+
+if(adBrilho){//quando colidir com o inimigo vai virar true entao vai diminuir o alpha e depois aumentar novamente
+	image_alpha -= 0.05;
+	if(image_alpha <=0.1){
+		adBrilho = false;
+	}
+}else if(adBrilho = false){
+	image_alpha += 0.05;
+} if(image_alpha >= 1){
+	image_alpha =1;
+}
+
+
 
 if(vida <= 0){
 	instance_destroy();
 }
 show_debug_message(vida)
+
+//fazendo o player virar zumbi ao colidir alguimas vezes com o zumbi
+if(playerVirandoZumbi <= 0){
+	instance_destroy();
+	instance_create_layer(x,y,"inimigos",obj_inimigo_grande);
+}
+

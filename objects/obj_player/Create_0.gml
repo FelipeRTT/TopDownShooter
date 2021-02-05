@@ -5,8 +5,10 @@ velocidade = 5;//criando variavel velocidade
 //definindo vida para o player
 vida = 5;
 
-//
+adBrilho = false;//definindo variavel que vai mudar para true quando o player colidir com o inimigo grande e vai fazer ele aumentar e diminuir de brilho pra indicar a colisao
 
+//fazendo com que ao player colidir algumas vezes com o zumbi ele vire zumbi
+playerVirandoZumbi = 10;
 
 //criando variaveis para o tiro
 cdr = 20; //definindo um cooldown para os tiros no caso 20 sao 3 tiros por segundo
