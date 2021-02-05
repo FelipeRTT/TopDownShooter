@@ -39,20 +39,30 @@ y = clamp(y,sprite_height/2, room_height-sprite_width/2);
 
 //checando colisao com inimigo 1 , como aqui é distroi vou fazer diretamente por aqui ja o inimigo grande vou fazer direto no inimigo 
 var colidindo1 = instance_place(x,y,obj_inimigo);
-if(colidindo1){
-	instance_destroy(colidindo1);
+if(colidindo1 && invencivel = false){//quando ele tomar um dano ele vai ficar invencivel e vai voltar ao normal apos um tempo
+	//instance_destroy(colidindo1); nao quero que ele perca vida ao colidir
 	vida--;
+	playerVirandoZumbi -= 0.5; //fazendo com que ao colidir com o inimigo 1 tbm va virando zumbi porem lentamente
+	invencivel = true;
+	adBrilho = true; //ativando o adBlue pra fazer o player ficar invisivel e voltar ao normal pro jogador saber que esta invencivel por um curto tempo
+}
+
+//voltando invencibilidade ao normal
+tempoInvencivel ++;
+if(tempoInvencivel >= room_speed * 3){
+	invencivel = false;//perdendo invencibilidade
+	tempoInvencivel = 0;//zerando o contador
 }
 
 //checando colisao com inimigo 2, e fazendo o player ficando invisivel e voltando ao normal para dar a sensaç~~ao de que teve algum dano
 
 if(adBrilho){//quando colidir com o inimigo vai virar true entao vai diminuir o alpha e depois aumentar novamente
-	image_alpha -= 0.05;
+	image_alpha -= 0.01;
 	if(image_alpha <=0.1){
 		adBrilho = false;
 	}
 }else if(adBrilho = false){
-	image_alpha += 0.05;
+	image_alpha += 0.01;
 } if(image_alpha >= 1){
 	image_alpha =1;
 }

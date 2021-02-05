@@ -14,4 +14,8 @@ playerVirandoZumbi = 10;
 cdr = 20; //definindo um cooldown para os tiros no caso 20 sao 3 tiros por segundo
 tempoPassado = 0; //vai aumentar no step e se for mair q o cdr vai poder atirar 
 
+//definindo invencivel, pois quando o player tomar dano vai ficar invencivel por algum tempo
+invencivel = false; 
 
+//zerando tempo da invencibilidade
+tempoInvencivel = 0;
