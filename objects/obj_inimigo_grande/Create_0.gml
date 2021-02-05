@@ -8,4 +8,7 @@ randomize();
 alarm[0] = room_speed * random_range(7,12);
 
 //definindo uma vida para ele
-vida = irandom_range(5,15);
+vida = irandom_range(5,10);
+
+//definindo numero de particulas 
+numeroDePariticulas = irandom_range(20,35);

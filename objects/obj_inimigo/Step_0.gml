@@ -1,5 +1,18 @@
 /// @description mudando de direção ao colidir no fim da tela
 
+//virando zumbi depois de x de tempo
+virandoZumbi ++;
+
+if(virandoZumbi >= room_speed * 60 && chanceVirar <20){ //apos x segundos o inimigo pequeno vai se transformar em inimigo grande
+	instance_create_layer(x,y,"inimigos", obj_inimigo_grande);
+	instance_destroy();
+}
+
+
+
+
+
+
 // olhando para onde esta indo, definindo o angulo como o direction que cria o obj aleatorio
 image_angle = direction;
 
@@ -27,12 +40,19 @@ if(distanciaPlayer < visao){//se a distancia entre o player for menor do que a v
 
 
 //morendo ao levar tiro
+
 var tiro = instance_place(x,y,obj_tiro);//checando com qual tiro colidiu
 if(tiro){
-	instance_destroy();//se destruindo
+	vida--;//perdendo vida 
 	instance_destroy(tiro);//destruindo o tiro
-	
+			
 }
+if(vida <= 0){
+		instance_destroy();
+	} //como os que irao virar zumbi terao mais vida quando a vida chegar a 0 destruir
+
+
+
 
 
 //fazendo com que ao sair do ovo o inimigo va aumentando aos poucos

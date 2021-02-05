@@ -2,7 +2,7 @@
 // You can write your code in this editor
 //fazendo destruir o inimigo que colidir
 
-instance_destroy(other);
+//obj_inimigo.vida --;
 
-//se destruindo
+
 instance_destroy();
