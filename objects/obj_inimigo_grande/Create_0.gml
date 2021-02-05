@@ -12,3 +12,6 @@ vida = irandom_range(5,10);
 
 //definindo numero de particulas 
 numeroDePariticulas = irandom_range(20,35);
+
+//definindo variavel para controlar a vida do player
+jaColidiu = false;

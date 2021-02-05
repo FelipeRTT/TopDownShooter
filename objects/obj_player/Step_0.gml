@@ -37,4 +37,20 @@ x = clamp(x,sprite_width/2,room_width-sprite_width/2);
 y = clamp(y,sprite_height/2, room_height-sprite_width/2);
 
 
+//checando colisao com inimigo 1 , como aqui é distroi vou fazer diretamente por aqui ja o inimigo grande vou fazer direto no inimigo 
+var colidindo1 = instance_place(x,y,obj_inimigo);
+if(colidindo1){
+	instance_destroy(colidindo1);
+	vida--;
+}
 
+//checando colisao com inimigo 2, ainda nao pensei em nada para fazer ao colidir com o inimigo 2
+//var colidindo2 = instance_place(x,y,obj_inimigo_grande);
+//if(colidindo2){ //aqui nao da certo pois ele colidi uma vez perde vida e nao conta mais
+//	vida--;
+//}
+
+if(vida <= 0){
+	instance_destroy();
+}
+show_debug_message(vida)
