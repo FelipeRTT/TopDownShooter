@@ -9,3 +9,6 @@ repeat(numeroDePariticulas){
 instance_create_layer(x,y,"inimigos",obj_particula_grande);
 }
 
+global.inimigoCriado--; //diminuindo um aos inimigos do control quando o zumbi morrer
+
+

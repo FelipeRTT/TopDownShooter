@@ -19,5 +19,6 @@ if(quantidadeInimigosTotal>=global.inimigoCriado){//auando a quantidade de inimi
 
 //fazendo com que ao morrer todos os inimigosCriados o jogo avançe de nivel
 if(global.inimigoCriado <= 0){
-	room_goto(Room2);
+	//room_goto(Room4);
+	game_restart();
 }

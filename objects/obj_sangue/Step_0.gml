@@ -3,7 +3,7 @@
 //quando o numero de sangue for maior que dez 
 if(global.numeroDeSangue >=10  ){//se o numero de sangues for maior que 10 ele vai começar a tirar o brilho
 image_alpha -= 0.001;//começar a tirar o alpha 
-show_debug_message(global.numeroDeSangue);
+//show_debug_message(global.numeroDeSangue);
 }
 
 

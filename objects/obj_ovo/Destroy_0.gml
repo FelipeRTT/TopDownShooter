@@ -5,4 +5,5 @@
 instance_create_layer(x,y,"inimigos", obj_inimigo);
 if(chanceZumbiDireto<=2){//chance de 2% de dropar diretamente um zombi e uma aranha
 	instance_create_layer(x,y,"inimigos",obj_inimigo_grande);
+	global.inimigoCriado ++; //caso aconteça OQUE È DIFICIL adicionar tambem um zumbi criado no contador pro lvl
 }

@@ -81,7 +81,7 @@ if(adBrilho){//quando colidir com o inimigo vai virar true entao vai diminuir o 
 
 
 if(vida <= 0){
-	instance_destroy();
+	room_restart();
 }
 show_debug_message(vida)
 

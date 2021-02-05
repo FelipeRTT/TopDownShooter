@@ -6,6 +6,7 @@ virandoZumbi ++;
 if(virandoZumbi >= room_speed * 60 && chanceVirar <20){ //apos x segundos o inimigo pequeno vai se transformar em inimigo grande
 	instance_create_layer(x,y,"inimigos", obj_inimigo_grande);
 	instance_destroy();
+	global.inimigoCriado ++; //adicionando um ao obj control
 }
 
 

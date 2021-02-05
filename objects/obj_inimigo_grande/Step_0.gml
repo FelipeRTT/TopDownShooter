@@ -18,7 +18,7 @@ if(vida <=0){//se destruindo ao chegar em 0 de vida
 //quando o player colidir com o inimigo ele vai perder dois de vida
 var colidindo2 = instance_place(x,y,obj_player);
 if(colidindo2 && jaColidiu = false){
-	obj_player.playerVirandoZumbi-=5;
+	obj_player.playerVirandoZumbi-=2;
 	jaColidiu = true; //ele colidiria inifinitamente, porem com essa variavel ele vai colidir uma vez e imteromper o if pois se nao em uma colisao so ele colidiria varias e varias vezes oque faria o player morrer diretamente
 	obj_player.adBrilho = true;
 }
