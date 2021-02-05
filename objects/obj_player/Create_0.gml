@@ -2,8 +2,11 @@
 // You can write your code in this editor
 velocidade = 5;//criando variavel velocidade
 
+//definindo variavel que vai jogar o player para tras ao colidir com o inimigo
+jogado = false;
+
 //definindo vida para o player
-vida = 5;
+vida = 50;
 
 adBrilho = false;//definindo variavel que vai mudar para true quando o player colidir com o inimigo grande e vai fazer ele aumentar e diminuir de brilho pra indicar a colisao
 
