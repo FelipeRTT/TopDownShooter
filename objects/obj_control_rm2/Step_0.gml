@@ -20,4 +20,9 @@ if(quantidadeInimigosTotal>=global.inimigoCriado){//auando a quantidade de inimi
 //fazendo com que ao morrer todos os inimigosCriados o jogo avançe de nivel
 if(global.inimigoCriado <= 0){
 	room_goto(Room3);
+	global.level ++; //aumentando nivel
+}
+
+if(instance_exists(obj_control)){
+	show_debug_message("testando control");
 }

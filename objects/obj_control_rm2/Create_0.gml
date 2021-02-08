@@ -6,3 +6,4 @@ quantidadeInimigosTotal = irandom_range(5,10);//definindo um valor aleatorio pra
 global.inimigoCriado = 0;//quando inimigo criado for = quantidade vai fazer o criando ser false
 criando = true;//para que enquanto criando for true ele continue criando no step 
 randomize();
+
